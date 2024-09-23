@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <%- include('partials/navigation') %>
+            <h1>الأجهزة</h1>
+            <!-- Devices cards -->
+            <main class="cards flex flex-wrap justify-center gap-4 p-4 w-full max-w-5xl">
+
+                <!-- Computers desk -->
+                <a href="computers/desktop" class="card w-full max-w-xs shadow bg-base-100 image-full rounded ">
+                    <div class="card-body">
+                        <img src="images/computers/computer-desk.png" alt="Computer Desk" class="rounded-lg" />
+                    </div>
+                    <h2 class="card-title">حواسب مكتبية</h2>
+                </a>
+
+                <!-- Computers laptop -->
+                <a href="" class="card w-full max-w-xs shadow bg-base-100 image-full rounded ">
+                    <div class="card-body">
+                        <img src="images/computers/computer-laptop.png" alt="Computer Laptop" class="rounded-lg" />
+                    </div>
+                    <h2 class="card-title">كمبيوتر محمول</h2>
+                </a>
+
+                <!-- Mobile phones -->
+                <a href="" class="card w-full max-w-xs shadow bg-base-100 image-full rounded ">
+                    <div class="card-body">
+                        <img src="images/computers/mobile-phones.png" alt="Mobile Phones" class="rounded-lg" />
+                    </div>
+                    <h2 class="card-title">هواتف محمولة</h2>
+                </a>
+
+                <!-- Tablets -->
+                <a href="" class="card w-full max-w-xs shadow bg-base-100 image-full rounded ">
+                    <div class="card-body">
+                        <img src="images//tablets.png" alt="Tablets" class="rounded-lg" />
+                    </div>
+                    <h2 class="card-title">لوحات</h2>
+                </a>
+
+                <!-- Security packages -->
+                <a href="security-camera-systems/security-packages" class="card w-full max-w-xs shadow bg-base-100 image-full rounded ">
+                    <div class="card-body">
+                        <img src="images/security-packages.png" alt="Security Packages" class="rounded-lg" />
+                    </div>
+                    <h2 class="card-title">حزم الامان</h2>
+                </a>
+
+            </main>
+
+    </div>
+</body>
+
+</html>
